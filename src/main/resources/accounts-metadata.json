@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "account",
+    "description": "This schema contain account details of customer",
+    "type": "object",
+    "properties": {
+        "account_id": {
+            "description": "The unique identifier for a accounts",
+            "type": "Integer"
+        },
+        "customername": {
+            "description": "Name of the account holder",
+            "type": "String"
+        },
+        "currency": {
+            "description": "This indicate currency type",
+            "type": "String"
+        },
+        "amount": {
+            "description": "Display account total amount",
+            "type": "BigDecimal"
+        }
+    },
+    "required": ["account_id", "customername"]
+}   
